@@ -481,3 +481,71 @@ img {
     line-height: 1.6;
     margin-bottom: 10px;
 }
+
+  
+@media (max-width: 768px) {
+
+  /* Encabezado y Navegación */
+  .encabezado {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  .navegacion-principal ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Sección Principal (Hero) */
+  .principal {
+    height: auto;
+    min-height: 45vh;
+    flex-direction: column;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contenido h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .foto-boxeador {
+    display: none; 
+  }
+
+  /* Tarjetas Boxeo y Kick */
+  .targeta-boxeo-kick {
+    flex-direction: column;
+  }
+
+  .targeta {
+    padding: 40px 0;
+  }
+
+  .targeta .contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Sección de Precios y Preguntas */
+  .precios-seccion.dark-theme,
+  .preguntas-seccion {
+    padding: 50px 15px;
+  }
+
+  .precios-seccion .grilla,
+  .preguntas-seccion .grilla {
+    grid-template-columns: 1fr; 
+  }
+
+  /* Horarios */
+  .HORARIOS img {
+    max-width: 100%;
+    height: auto;
+  }
+}
